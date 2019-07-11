@@ -1,21 +1,18 @@
-<h1>Hello Git World!</h1>
-<div>
-    <p>Git Basics:<br>
+Git and Github statements:
         git diff index.html
         git add index.html
         git commit -m "Added div p and br"
         git config --list
-	    
-        git config --global core.editor "code --wait"
-
+	-- VSC as default editor
+        git config --global core.editor "code --wait" 
 	 -- Todo after creating a repo      
-	-- echo "# GitGithubMasterclass" >> README.md
+	--  echo "# GitGithubMasterclass" >> README.md
 	--  git init
-	-- git add README.md
-	--git commit -m "first commit"
+	--  git add README.md
+	--  git commit -m "first commit"
 	git remote add origin https://github.com/glanzl/GitGithubMasterclass.git
 	git push -u origin master
-    </p>
-    
-    
-</div>
+        git pull origin master
+
+	-- track
+        git branch --set-upstream-to=origin/master master
