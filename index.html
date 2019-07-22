@@ -19,3 +19,29 @@ git pull origin master
 git branch --set-upstream-to=origin/master master
 -- now you only have to write the following (omitting origin master)
 git pull
+
+Fork a Github Repo
+Go https://github.com/LaloCo/ 
+Choose repo GitGitHubMasterlcass and click on fork
+Github creates automatically a fork of this git repo in your account
+
+How to clone a repo from GitHub
+https://github.com/LaloCo/GitGitHubMasterlcass.git (click on the copy symbol)
+cd /home/gerhard/Documents
+mkdir repos
+cd repos
+git clone https://github.com/LaloCo/GitGitHubMasterlcass.git
+cd GitGitHubMasterlcass
+git list --config
+-- shows that the remote (origin) of this is already in it. In this case https://github.com/LaloCo/GitGitHubMasterlcass.git
+code .    -- opens the files of the repo in Visual Studio Code
+
+git show e5e1148  -- a commit of the cloned /home/gerhard/Documents/repos/html5-boilerplate folder
+git show HEAD
+git show HEAD~4
+git diff HEAD~1 HEAD~4
+git annotate gulpfile.bubble.js
+git annotate index.html
+
+Install the GIT Lens extension for VSC, this uses the annotate function of GIT and shows info about who made changes on a file
+
